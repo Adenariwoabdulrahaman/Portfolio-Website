@@ -14,7 +14,20 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 17%;
+    margin-top: 35px;
+}
+.checkbox {
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
 }
 .nav-links {
     gap: 2rem;
@@ -36,8 +49,8 @@ a:hover {
     font-size: 2rem;
 }
 section {
-    padding-top: 4vh;
-    height: 95vh;
+    padding-top: 4%;
+    height: 42.5rem;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -62,7 +75,6 @@ section {
 }
 .section__text p {
     font-weight: 600;
-
 }
 .text1 {
     text-align: center;
@@ -115,7 +127,7 @@ section {
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
-    height: 70vh;
+    height: 33.75rem;
 }
 .about-col-2 {
     flex-basis: 60%;
@@ -275,13 +287,125 @@ footer p {
 }
 
 
+/* Media Queries for Mobile (max-width: 800px) */
+@media screen and (max-width: 800px) {
+    /* Ensure no overflow */
+    html, body {
+        overflow-x: hidden;
+        height: auto;
+    }
+
+    /* Nav adjustments */
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-links {
+        flex-direction: row;
+        gap: 1rem;
+        font-size: 1.2rem;
+        float: keft;
+    }
+    .logo {
+        padding-left: 0;
+    }
+
+    /* Section adjustments */
+    section {
+        margin: 0 2rem;
+        padding-top: 50px;
+        height: auto; 
+    }
+
+    /* Profile picture container adjustments */
+    #profile {
+        display: block;
+    }
+    .section__pic-container {
+        height: auto;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Socials container adjustments */
+    .socials-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .icon {
+        height: 3rem;
+    }
+
+    /* Title adjustments */
+    .title {
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    /* Row adjustments */
+    .row {
+        flex-direction: column;
+    }
+
+    /* About section adjustments */
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 img {
+        height: auto;
+    }
 
 
+    /* Projects section adjustments */
+    .projects {
+        height: auto;
+    }
+    .project-box {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .project-card {
+        height: auto;
+        width: 90%;
+    }
+    .project-card img {
+        max-width: 100%;
+    }
 
+    /* Contact section adjustments */
+    .sub-title {
+        font-size: 2.5rem;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .btn {
+        width: fit-content;
+        padding: 10px;
+    }
+    form input, form textarea {
+        font-size: 1rem;
+        width: 95%;
+    }
+    .submit {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 10px auto;
+        display: block;
+        background-color: #262626; /* Ensure button color is visible */
+        border: 1px solid grey;
+    }
 
-
-
-
-
-
-
+    /* Footer adjustments */
+    footer {
+        margin: 0;
+        height: auto;
+        padding: 1rem;
+        background-color: #f0f0f0; /* Ensure footer is visible */
+        position: relative; /* Avoid footer getting overlapped */
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+}
