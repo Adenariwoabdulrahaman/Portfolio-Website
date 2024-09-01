@@ -127,7 +127,7 @@ section {
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
-    height: 33.75rem;
+    height: 130%;
 }
 .about-col-2 {
     flex-basis: 60%;
