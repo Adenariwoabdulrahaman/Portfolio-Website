@@ -17,18 +17,6 @@ nav {
     height: 17%;
     margin-top: 35px;
 }
-.checkbox {
-    font-size: 30px;
-    color: #000000;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check {
-    display: none;
-}
 .nav-links {
     gap: 2rem;
     list-style: none;
@@ -306,8 +294,8 @@ footer p {
         font-size: 1.2rem;
         float: keft;
     }
-    .logo {
-        padding-left: 0;
+    nav .logo {
+        display: none;
     }
 
     /* Section adjustments */
@@ -323,7 +311,7 @@ footer p {
     }
     .section__pic-container {
         height: auto;
-        width: 300px;
+        width: auto;
         margin: 0 auto;
     }
 
